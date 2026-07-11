@@ -1,0 +1,15 @@
+/* Minimal styling only — font/spacing/KPI tiles. No decorative gradients
+   or borders (Lecture 8: data-ink ratio, avoid chart junk). */
+
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+h4 {
+  margin-top: 4px;
+  color: #333;
+}

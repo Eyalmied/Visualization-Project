@@ -7,3 +7,10 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# Build cache — regenerated automatically from airlines_flights_data.csv
+# by R/data_prep.R on first run (see app.R / scripts/explore_eda.R)
+data/flights_clean.rds
+
+# Local tool config (not part of the project deliverable)
+.claude/

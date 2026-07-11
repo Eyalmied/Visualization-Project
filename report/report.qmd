@@ -1,0 +1,41 @@
+---
+title: "Indian Flights Dashboard — Project Report"
+subtitle: "Visualization of Information"
+format: html
+---
+
+<!--
+Skeleton only — fill in per PLAN.md's "Report Structure" section, which
+maps each heading below to the rubric and lists which lecture theory to
+cite. Each group member writes the section(s) assigned to them in
+PLAN.md's "Team Task Breakdown".
+-->
+
+## 1. Problem Definition
+
+## 2. Data Understanding
+
+## 3. Data Processing
+
+## 4. Visualization & Interaction Design
+
+### 4.1 Chart-by-chart justification
+
+### 4.2 The pie-chart decision
+
+### 4.3 Interaction design (9 operators)
+
+### 4.4 Dashboard layout
+
+## 5. AI Usage Documentation
+
+See `ai_prompt_appendix.md` for the full prompt log.
+
+## 6. Evaluation & Reflection
+
+## 7. Deliverables Checklist
+
+- [ ] Report (this document)
+- [ ] Source code (GitHub repo)
+- [ ] AI prompt appendix (`ai_prompt_appendix.md`)
+- [ ] Working demo (10–15 min live presentation)
