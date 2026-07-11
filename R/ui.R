@@ -50,8 +50,8 @@ ui <- navbarPage(
           column(6, plotOutput("chart_booking_curve", height = 320))
         ),
         fluidRow(
-          column(6, plotlyOutput("chart_scatter", height = 320)),
-          column(6, plotOutput("chart_grid", height = 320))
+          column(6, plotlyOutput("chart_scatter", height = 380)),
+          column(6, plotOutput("chart_grid", height = 380))
         ),
         div(style = "color:#666; font-size: 0.85em; margin-top: 8px;",
             "Tip: lasso-select points on the scatter plot to highlight the matching flights in the grid on the right.")

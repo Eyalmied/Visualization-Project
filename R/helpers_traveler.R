@@ -76,10 +76,18 @@ chart_duration_price_scatter <- function(df, color_by = "stops", max_points = 50
     geom_point(alpha = 0.35, size = 1) +
     labs(title = "Flight duration vs. price", x = "Duration (hours)",
          y = "Price (INR)", color = color_by) +
-    theme_dashboard()
+    theme_dashboard() +
+    theme(legend.position = "none")  # plotly draws its own legend below; a
+                                      # ggplot bottom legend + plotly's legend
+                                      # both claiming the same space is what
+                                      # overlapped the x-axis title
 
   ggplotly(p, tooltip = "text", source = "duration_price_scatter") %>%
-    layout(dragmode = "select") %>%
+    layout(
+      dragmode = "select",
+      legend = list(orientation = "h", x = 0, y = -0.25, xanchor = "left"),
+      margin = list(b = 70)
+    ) %>%
     event_register("plotly_selected")
 }
 
