@@ -1,0 +1,163 @@
+{
+  "n_rows": 300153,
+  "n_airlines": 6,
+  "n_cities": 6,
+  "n_routes": 30,
+  "n_na": 0,
+  "price_min": 1105,
+  "price_max": 123071,
+  "price_mean": 20890,
+  "price_median": 7425,
+  "price_sd": 22698,
+  "duration_min": 0.83,
+  "duration_max": 49.83,
+  "duration_mean": 12.2,
+  "duration_price_cor": 0.204,
+  "price_by_class": [
+    {
+      "class": "Economy",
+      "mean_price": 6572.3424,
+      "median_price": 5772
+    },
+    {
+      "class": "Business",
+      "mean_price": 52540.0811,
+      "median_price": 53164
+    }
+  ],
+  "price_by_airline": [
+    {
+      "airline": "AirAsia",
+      "mean_price": 4091.0727,
+      "n": 16098
+    },
+    {
+      "airline": "Indigo",
+      "mean_price": 5324.2163,
+      "n": 43120
+    },
+    {
+      "airline": "GO_FIRST",
+      "mean_price": 5652.0076,
+      "n": 23173
+    },
+    {
+      "airline": "SpiceJet",
+      "mean_price": 6179.2789,
+      "n": 9011
+    },
+    {
+      "airline": "Air_India",
+      "mean_price": 23507.0191,
+      "n": 80892
+    },
+    {
+      "airline": "Vistara",
+      "mean_price": 30396.5363,
+      "n": 127859
+    }
+  ],
+  "price_by_stops": [
+    {
+      "stops": "zero",
+      "mean_price": 9375.9385,
+      "n": 36004
+    },
+    {
+      "stops": "one",
+      "mean_price": 22900.9925,
+      "n": 250863
+    },
+    {
+      "stops": "two_or_more",
+      "mean_price": 14113.4508,
+      "n": 13286
+    }
+  ],
+  "booking_early_mean": 28069,
+  "booking_late_mean": 19276,
+  "booking_pct_diff": 45.6,
+  "top_expensive_routes": [
+    {
+      "route": "Chennai → Bangalore",
+      "mean_price": 25081.8505,
+      "n": 6493
+    },
+    {
+      "route": "Kolkata → Chennai",
+      "mean_price": 23660.361,
+      "n": 6653
+    },
+    {
+      "route": "Bangalore → Kolkata",
+      "mean_price": 23500.0612,
+      "n": 10028
+    }
+  ],
+  "top_cheap_routes": [
+    {
+      "route": "Hyderabad → Delhi",
+      "mean_price": 17243.9457,
+      "n": 8506
+    },
+    {
+      "route": "Delhi → Hyderabad",
+      "mean_price": 17347.2884,
+      "n": 9328
+    },
+    {
+      "route": "Bangalore → Delhi",
+      "mean_price": 17723.314,
+      "n": 13756
+    }
+  ],
+  "top_busy_routes": [
+    {
+      "route": "Delhi → Mumbai",
+      "mean_price": 19355.8298,
+      "n": 15289
+    },
+    {
+      "route": "Mumbai → Delhi",
+      "mean_price": 18725.32,
+      "n": 14809
+    },
+    {
+      "route": "Delhi → Bangalore",
+      "mean_price": 17880.2163,
+      "n": 14012
+    }
+  ],
+  "market_share": [
+    {
+      "airline": "Vistara",
+      "n": 127859,
+      "share_pct": 42.6
+    },
+    {
+      "airline": "Air_India",
+      "n": 80892,
+      "share_pct": 27
+    },
+    {
+      "airline": "Indigo",
+      "n": 43120,
+      "share_pct": 14.4
+    },
+    {
+      "airline": "GO_FIRST",
+      "n": 23173,
+      "share_pct": 7.7
+    },
+    {
+      "airline": "AirAsia",
+      "n": 16098,
+      "share_pct": 5.4
+    },
+    {
+      "airline": "SpiceJet",
+      "n": 9011,
+      "share_pct": 3
+    }
+  ]
+}
