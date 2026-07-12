@@ -27,6 +27,7 @@ ui <- navbarPage(
         h4("Filters"),
         selectInput("t_source", "Source city", choices = c("All", city_choices), selected = "All"),
         selectInput("t_dest", "Destination city", choices = c("All", city_choices), selected = "All"),
+        checkboxGroupInput("t_airline", "Airline", choices = airline_choices, selected = airline_choices),
         checkboxGroupInput("t_class", "Class", choices = levels(flights_df$class), selected = levels(flights_df$class)),
         checkboxGroupInput("t_stops", "Stops", choices = stops_choices, selected = stops_choices),
         sliderInput("t_days_left", "Days left until departure",

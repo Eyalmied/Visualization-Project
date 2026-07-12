@@ -215,7 +215,7 @@ Roles are split by dashboard area so each person owns a vertical slice (their ow
 ### Person 2 — Traveler-View Lead
 - **Owns**: `R/helpers_traveler.R`, Tab A charts — #1 price-by-class violin, #4 booking-curve, #7 duration-vs-price scatter, #8 departure-time×airline grid
 - **Step 1**: Once `flights_clean.rds` is available, build static (non-reactive) versions of all 4 charts to lock encoding choices.
-- **Step 2**: Wire Traveler-tab filters (days_left slider, duration slider, class/stops checkboxes) into a `reactive()` and connect to all 4 charts inside `server.R`.
+- **Step 2**: Wire Traveler-tab filters (source/dest city, airline, class/stops checkboxes, days_left slider, duration slider) into a `reactive()` and connect to all 4 charts inside `server.R`.
 - **Step 3**: Implement the Encode operator (log-scale checkbox on #1, color-by selector on #7) and the Reconfigure operator on #8 (metric radio button).
 - **Step 4**: Proofread the whole app (not just Tab A) once integration is done.
 - **Step 5**: Write report §Visualization & Interaction Design subsection for charts #1/#4/#7/#8 (cite Lecture 9 violin-vs-boxplot, Lecture 4 `geom_smooth`, Lecture 9 bubble-chart critique, Bertin small multiples).

@@ -22,6 +22,7 @@ server <- function(input, output, session) {
     d <- flights_df
     if (input$t_source != "All") d <- d[d$source_city == input$t_source, ]
     if (input$t_dest != "All") d <- d[d$destination_city == input$t_dest, ]
+    d <- d[d$airline %in% input$t_airline, ]
     d <- d[d$class %in% input$t_class, ]
     d <- d[d$stops %in% input$t_stops, ]
     d <- d[d$days_left >= input$t_days_left[1] & d$days_left <= input$t_days_left[2], ]
@@ -85,6 +86,7 @@ server <- function(input, output, session) {
   observeEvent(input$t_reset, {
     updateSelectInput(session, "t_source", selected = "All")
     updateSelectInput(session, "t_dest", selected = "All")
+    updateCheckboxGroupInput(session, "t_airline", selected = levels(flights_df$airline))
     updateCheckboxGroupInput(session, "t_class", selected = levels(flights_df$class))
     updateCheckboxGroupInput(session, "t_stops", selected = levels(flights_df$stops))
     updateSliderInput(session, "t_days_left", value = c(1, 49))
